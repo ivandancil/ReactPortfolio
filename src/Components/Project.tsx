@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -9,26 +7,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { ThemeProvider, responsiveFontSizes, createTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import HTML from '../assets/html.png'
-import CSS from '../assets/css.png'
-import JAVASCRIPT from '../assets/javascript.png'
-import REACT from '../assets/react.png'
-import GITHUB from '../assets/github.png'
-import NODE from '../assets/node.png'
 import Project1 from '../assets/project1.png'
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    ...theme.applyStyles('dark', {
-      backgroundColor: 'white',
-     
-    }),
-  }));
-  
+
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
